@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Embedding Example</title>
+    <!-- Add the Tableau JavaScript API script with 'defer' attribute -->
+    <script type='module' src='https://us-west-2b.online.tableau.com/javascripts/api/tableau.embedding.3.latest.js' defer></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+</head>
+<body>
+    <!-- Add a container for the Tableau visualization -->
+    <div id="tableau-container"></div>
+
+    <script>
+        // Function to embed Tableau visualization
+        function embedTableauViz() {
+            // URL of your Tableau visualization
+            const vizUrl = 'https://us-west-2b.online.tableau.com/t/karthikat016996148/views/DATA230_FinalProject_GunViolenceinUSA_Karthik/Dashboard2';
+            
+
+            // Create options for the Tableau Viz
+            const options = {
+                width: 1300,
+                height: 840,
+                hideTabs: true,
+                toolbar: { 
+                    position: 'bottom'
+                }
+            };
+
+            // Create a reference to the div where the Tableau Viz will be embedded
+            const containerDiv = document.getElementById('tableau-container');
+
+            // Check if the tableau object is defined before creating a new Viz object
+            if (typeof tableau !== 'undefined') {
+                // Create a new Tableau Viz object
+                const viz = new tableau.Viz(containerDiv, vizUrl, options);
+            } else {
+                console.error('Tableau JavaScript API not loaded.');
+            }
+        }
+
+        // Call the function to embed the Tableau visualization
+        embedTableauViz();
+    </script>
+</body>
+</html>
