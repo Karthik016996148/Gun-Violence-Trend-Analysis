@@ -57,12 +57,3 @@ The primary goal of this project is to:
 ## 📊 Dashboards
 - **Victims Dashboard**: Interactive insights into victims’ demographics, location, and weapon types.
 - **Shooters Dashboard**: Analysis of shooters’ background, mental health, and weapon usage trends.
-
-## 🏁 Conclusion
-The analysis highlights:
-- **An alarming rise in gun violence over the past decade.**
-- **A geographical concentration of incidents in specific cities.**
-- **A strong correlation between mental health issues and shootings.**
-- **The need for policy interventions and public safety measures.**
-
-Only through **collaborative efforts** across **policy-making, community engagement, and research** can we hope to **reduce gun violence** and its **devastating impact on society**.
